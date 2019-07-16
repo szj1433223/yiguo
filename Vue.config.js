@@ -1,0 +1,13 @@
+module.exports={
+    devServer:{
+        proxy:{
+            "/api":{
+                target:"https://api1.34580.com",
+                changeOrigin:true,
+                pathRewrite:{
+                    "^/api":"/"
+                }
+            }
+        }
+    }
+}
