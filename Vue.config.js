@@ -2,7 +2,7 @@ module.exports={
     devServer:{
         proxy:{
             "/api":{
-                target:"https://api1.34580.com",
+                target:"https://b2capigateway.yiguo.com",
                 changeOrigin:true,
                 pathRewrite:{
                     "^/api":"/"
