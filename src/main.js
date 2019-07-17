@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './routers'
 import store from './store/index'
 import axios from 'axios'
+import '../public/common/js/flexble'
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false

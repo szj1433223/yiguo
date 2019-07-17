@@ -1,6 +1,9 @@
 <template>
     <div>
-        mine
+        <div class="header">
+            <div class="head_photo">123</div>
+            <div class="login_register"></div>
+        </div>
     </div>
 </template>
 
@@ -10,6 +13,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.header{
+    width: 100%;
+    height: 3.98rem;
+    background:url("//img06.yiguoimg.com/d/web/180517/01262/143351/bgimg.jpg") 
+}
 
 </style>

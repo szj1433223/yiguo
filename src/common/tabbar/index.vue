@@ -67,7 +67,7 @@ ul>li{
     align-items: center
 }
 .iconfont{
-    font-size: 44px
+    font-size: 22px
 }
 ul>.router-link-active{
     color: rgb(16, 204, 41);
