@@ -1,11 +1,12 @@
 import axios from 'axios'
 export default {
     state:{
-        list:[]
+      productList:[]
     },
     mutations:{
         getmProduct(state,data){
-            state.list=data
+            state.productList=data
+            // console.log(111,state.productList)
         }
     },
     actions:{
@@ -37,9 +38,10 @@ export default {
                 }
               )
               .then(data => {
-                commit("getmProduct",data)
-                console.log(data);
+                commit("getmProduct",data.data.Data.CommodityList)
+                console.log(data.data.Data.CommodityList);
               });
           },
-    }
+    },
+    namespaced: true
 }

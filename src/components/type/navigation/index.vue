@@ -1,12 +1,13 @@
 <template>
   <div class="box">
     <ul>
-      <li
+      <v-touch
+        tag="li"
         v-for="(item,index) in listNav"
         :key="index"
-        @click="getIndex(index)"
+        @tap="getIndex(index)"
         :class="index==indx?'active':''"
-      >{{item.CategoryName}}</li>
+      >{{item.CategoryName}}</v-touch>
     </ul>
   </div>
 </template>

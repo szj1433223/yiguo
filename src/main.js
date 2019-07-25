@@ -5,7 +5,9 @@ import store from './store/index'
 import axios from 'axios'
 import loading from '@/common/loading/index'
 import BScroll from '@/common/BScroll'
+import VueTouch from "vue-touch"
 
+Vue.use(VueTouch,{name:'v-touch'})
 Vue.component("BScroll",BScroll)
 import 'mint-ui/lib/style.css'
 import Mint from 'mint-ui';
