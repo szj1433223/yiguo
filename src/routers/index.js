@@ -5,6 +5,7 @@ import type from './type'
 import eat from './eat'
 import shopcar from './shopcar'
 import mine from './mine'
+import city from './home/city'
 
 Vue.use(Router)
 
@@ -15,6 +16,7 @@ export default new Router({
     eat,
     shopcar,
     mine,
+    city,
 
     {
       path:"**",
