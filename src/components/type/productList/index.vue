@@ -1,6 +1,6 @@
 <template>
-    <div ref="box">
-        eat
+    <div>
+        商品
     </div>
 </template>
 

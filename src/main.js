@@ -3,9 +3,15 @@ import App from './App.vue'
 import router from './routers'
 import store from './store/index'
 import axios from 'axios'
+import loading from '@/common/loading/index'
+import BScroll from '@/common/BScroll'
+
+Vue.component("BScroll",BScroll)
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
+
+Vue.use(loading)
 
 new Vue({
   router,
