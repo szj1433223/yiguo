@@ -7,7 +7,14 @@ module.exports={
                 pathRewrite:{
                     "^/api":"/"
                 }
+            },
+            "/dd":{
+                target:"http://localhost:3000/",
+                changeOrigin:true,
+                pathRewrite:{
+                    "^/dd":"/"
+                }
             }
         }
-    }
+    },
 }

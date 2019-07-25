@@ -16,5 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
+.mint-toast-text {
+        font-size:.32rem !important;
+    }
 
+    
 </style>

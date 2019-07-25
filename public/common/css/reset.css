@@ -2,6 +2,7 @@
 /* CSS Document */
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 
+
 fieldset, c{ border:none; }
 
 img{display: block;}
@@ -10,7 +11,7 @@ address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:norm
 
 ul, ol ,li{ list-style:none; }
 
-body { color:#333; font:12px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;}
+body { color:#333; font:12px 'Avenir', 'PingFang SC', "\5FAE\8F6F\96C5\9ED1"; background:#f4f4f4;}
 
 a { color:#666; text-decoration:none; }
 /*清除浮动*/
