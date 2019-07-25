@@ -7,9 +7,12 @@ import shopcar from './shopcar'
 import mine from './mine'
 import city from './home/city'
 
+import login from './mine/login'
+import register from './mine/register'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     home,
     type,
@@ -18,6 +21,8 @@ export default new Router({
     mine,
     city,
 
+    login,
+    register,
     {
       path:"**",
       redirect:"/home"
@@ -26,5 +31,6 @@ export default new Router({
       path:"/#",
       redirect:"/home"
     }
+   
   ]
 })
