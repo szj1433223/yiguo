@@ -7,6 +7,9 @@ import loading from '@/common/loading/index'
 import BScroll from '@/common/BScroll'
 
 Vue.component("BScroll",BScroll)
+import 'mint-ui/lib/style.css'
+import Mint from 'mint-ui';
+Vue.use(Mint);
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
