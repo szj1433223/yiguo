@@ -9,7 +9,7 @@ module.exports={
                 }
             },
             "/dd":{
-                target:"http://localhost:3000/",
+                target:"http://10.9.26.162:3000/",
                 changeOrigin:true,
                 pathRewrite:{
                     "^/dd":"/"
