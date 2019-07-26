@@ -1,8 +1,8 @@
 <template>
     <div>
-               <div v-for="(item,index) in list" :key="index" v-if="index!==0">
+               <!-- <div v-for="(item,index) in list" :key="index" v-if="index!==0">
                    <img :src="item.adPictures[0].pictureUrl" >
-               </div>
+               </div> -->
                <div v-for="item in obj" :key="item.hrefType">
                    <img :src="item.adPictures[0].pictureUrl" >
                </div>
