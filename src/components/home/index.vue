@@ -1,7 +1,7 @@
 <template>
     <div id="top">
         <div class="city">
-            <router-link to="/city">上海</router-link>
+            <router-link to="/city">{{cs}}</router-link>
             <span></span>
         </div>
         <div class="search">
@@ -13,8 +13,11 @@
     </div>
 </template>
 <script>
+import { mapState } from "vuex";
 export default {
-    
+    computed:{
+    ...mapState({cs:state=>state.city.cs})
+  },
 }
 </script>
 

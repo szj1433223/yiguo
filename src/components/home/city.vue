@@ -3,13 +3,13 @@
       <div class="top">
         <h3>热门城市</h3>
         <ul>
-        <li v-for="(item,index) in list" :key="index" >{{item.AreaName}}</li>
+        <li v-for="(item,index) in list" :key="index"  @click="site(item.AreaName)">{{item.AreaName}}</li>
         </ul>
       </div>
       <div v-for="(content,idx) in obj" :key="idx" class="cont">
           <h4>{{content.FirstLetter}}</h4>
           <ul>
-            <li v-for="(city,citydex) in content.CityList" :key="citydex">
+            <li v-for="(city,citydex) in content.CityList" :key="citydex"  @click="site(city.AreaName)">
                 {{city.AreaName}}
             </li>
           </ul>
@@ -49,6 +49,12 @@ export default {
           this.obj = res.data.Data.CityList
       });
   },
+   methods:{
+    site(val){
+      this.$store.commit('sites',val)
+      this.$router.push("@views/home/index.vue")
+    }
+  }
 };
 </script>
 <style scoped>
