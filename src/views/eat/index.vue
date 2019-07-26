@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="box">
         eat
     </div>
 </template>

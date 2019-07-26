@@ -6,9 +6,11 @@ import eat from './eat'
 import shopcar from './shopcar'
 import mine from './mine'
 import city from './home/city'
-
+import productList from './type/productList'
 import login from './mine/login'
 import register from './mine/register'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,9 +22,11 @@ export default new Router({
     shopcar,
     mine,
     city,
-
+    productList,
     login,
     register,
+
+
     {
       path:"**",
       redirect:"/home"
