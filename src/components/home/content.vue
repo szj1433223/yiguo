@@ -17,9 +17,7 @@
       </div>
     </div>
 
-    <div class="go" @click="go">
-      <img src="//img07.yiguoimg.com/e/web/161230/00584/172344/top.png">
-    </div>
+    
   </div>
 </template>
 <script>
@@ -61,12 +59,7 @@ export default {
         this.list = res.data.Data.templateComponentList;
       });
   },
-  methods:{
-    go(){
-        document.documentElement.scrollTop=0;
-        // console.log(document.documentElement.scrollTop)
-    }
-  },
+  
   directives: {
     hide: {
       // 指令的定义
@@ -140,15 +133,5 @@ export default {
   right: 0.2rem;
   bottom: 0.13rem;
 }
-.go{
-  position: fixed;
-  right: 0.4rem;
-  bottom: 2.5rem;
-  z-index: 100;
 
-}
-.go>img{
-  width: 0.8rem;
-  height: 0.8rem;
-}
 </style>
