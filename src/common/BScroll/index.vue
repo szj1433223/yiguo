@@ -10,7 +10,8 @@ export default {
     mounted () {
         this.scroll = new BScorll(this.$refs.wrapper,{
             tap:true,
-            pullUpLoad:true
+            pullUpLoad:true,
+            click:true
         })
     }
 }
